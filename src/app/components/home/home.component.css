@@ -1,0 +1,13 @@
+#aboutass{
+    position: relative;
+    top: -10vh;
+    background-color: white;
+    border-radius: 1rem;
+}
+.btn{
+    width: auto;
+}
+.card>img{
+    border-radius: 1rem;
+
+}

@@ -1,0 +1,27 @@
+i{
+    font-size: 25px;
+    color: black;
+}
+i:hover{
+    color: white;
+}
+
+body{
+    --navbar-scroll: transparent; 
+    --navbar-scroll-text: white;
+    --navbar-scroll-shadow: none;
+   }
+.navbar {
+    background-color: var(--navbar-scroll);
+    transition: background-color 1s ease;
+    color: var(--navbar-scroll-text);
+    -webkit-box-shadow: var(--navbar-scroll-shadow);
+    box-shadow: var(--navbar-scroll-shadow);
+}
+.navbar-brand{
+    color: #62C66E;
+    font-family: cooper-black-std,serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0.1rem 0.1rem  #DD2316;
+}
