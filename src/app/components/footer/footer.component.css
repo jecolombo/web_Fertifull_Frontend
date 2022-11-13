@@ -1,8 +1,19 @@
 *{
-    background-color: #62C66E;
-
+    background-color: #2F3131;
+    color: white;
 }
 
-h6{
-    border-bottom: 1px solid black;
+i { font-weight: 300;
+    color:white;
+    transition: 0.5s all;
+}
+
+.fa-brands:hover{
+    transform: scale(1.1);
+    color: #62C66E;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
 }
