@@ -11,6 +11,7 @@ import { AboutassComponent } from './components/aboutass/aboutass.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,16 +21,18 @@ import { FooterComponent } from './components/footer/footer.component';
     AboutassComponent,
     ProductsComponent,
     ContactsComponent,
-    FooterComponent
+    FooterComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      {path:'',component:HomeComponent},
+      {path:'home',component:HomeComponent},
+      
       {path:'aboutass',component:AboutassComponent},
       {path:'products',component:ProductsComponent},
       {path:'contacts',component:ContactsComponent},
-      {path:'**',redirectTo:'/',pathMatch:'full'},
+      {path:'**',redirectTo:'home',pathMatch:'full'},
     ])
   ],
   providers: [],

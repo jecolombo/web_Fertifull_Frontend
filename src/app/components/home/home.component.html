@@ -1,6 +1,7 @@
 <app-banner></app-banner>
+<!-- Nuestro Productos --> 
 <div class="container  text-center p-2 " >
-    <h1 class="container-xl">Nuestros Productos</h1>
+    <h1 class="container-xl text-success">Nuestros Productos</h1>
     <div class="container-fluid  row justify-content-around p-0 m-0">
         <div class="card shadow m-3 p-0" style="max-width: 340px;">
             <div class="row g-0">
@@ -33,42 +34,53 @@
     </div>
     
 </div>
-
+<!-- Imagen + conocer la empresa --> 
 <div class="container-fluid p-0"><img class="w-100" src="/assets/img/staff.png" alt="staff"></div>
 
 <div class="container shadow col-8 justify-content-center  p-4" id="aboutass">
-    <div class="row"><h1 class=" text-center">Nuestra historia</h1>
+    <div class="row"><h1 class="text-success text-center">Nuestra historia</h1>
     <p class=" p-2">Desde 1997 enfocados en brindar excelencia en todos nuestros productos para cultivos intensivos, jardinería y paisajismo, entendiendo que el desarrollo sustentable es la única manera para lograrlo.</p>
     </div>
     <div class="row justify-content-center"><button class=" btn btn-success" routerLink="aboutass" type="button" >Conocer más</button>
     </div>
 </div>
 
+<!-- Nuestro trabajos + imagen --> 
+<div class="container-fluid  d-flex justify-content-start  p-0 my-4" id="work">
 
+<div class="container col-md-4 col-xl-3  rounded shadow p-0" style="background-color: white;height: fit-content;margin: 5rem;" >
+    <div class="row"><h1 class="text-success text-center  m-1">Nuestros Trabajos</h1>
+    </div>
 
-<div class="container col-8 justify-content-center align-items-center">
-    <div class="row"><h1 class=" text-center pt-2 ">Nuestros Trabajos</h1>
-    <p class=" p-2"></p>
+    <div class="container col-md-12 " >
+      <app-carousel ></app-carousel>
     </div>
-    <div class="row justify-content-center"><button class="btn btn-success" routerLink="aboutass" type="button">Ver más</button>
+    
+    <div class="row d-flex justify-content-center m-2"><button class="btn btn-success " routerLink="aboutass" type="button">Ver más</button>
     </div>
+    
+</div> 
+
 </div>
-<div class="container-fluid text-center  row justify-content-around p-0 my-4 mx-0">
-    <h1 class="col-12 mb">¿Quieres vender nuestros productos?</h1>
+<br class="m-2">
+
+<!-- vender Productos --> 
+<div class="container-fluid text-center  row justify-content-evenly p-0 my-4 mx-0">
+  <h1 class="col-12 text-success m-4">¿Queres vender nuestros productos?</h1>
+  <div class="card shadow p-0 m-2" style="width: 18rem;">
+      <img src="/assets/img/vivero.png" class="card-img-top p-2" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Soy un vivero</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a routerLink="contacts" class="btn btn-success">Más info</a>
+      </div>
+    </div>
     <div class="card shadow p-0 m-2" style="width: 18rem;">
-        <img src="/assets/img/vivero.png" class="card-img-top p-2" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">¿Sos un vivero?</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a routerLink="contacts" class="btn btn-success">Más info</a>
-        </div>
+      <img src="/assets/img/mayorista.png" class="card-img-top p-2" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Soy un mayorista</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a routerLink="contacts" class="btn btn-success align-bottom">Más info</a>
       </div>
-      <div class="card shadow p-0 m-2" style="width: 18rem;">
-        <img src="/assets/img/mayorista.png" class="card-img-top p-2" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">¿Sos un mayorista?</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a routerLink="contacts" class="btn btn-success align-bottom">Más info</a>
-        </div>
-      </div>
+    </div>
 </div>

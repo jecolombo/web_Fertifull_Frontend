@@ -1,5 +1,13 @@
 .banner-image {
-    background-image: url('https://www.pennington.com/-/media/Project/OneWeb/Pennington/Images/blog/fertilizer/what-is-fish-fertilizer/fish-fertilizer-og.jpg');
+    background-image: url('/assets/img/banner1-1.png');
     background-size: cover;
     height: 80vh;
+}
+h2{
+    font-size: 3rem;
+    color: #62C66E;
+    font-family: cooper-black-std,serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0.1rem 0.1rem  #DD2316;
 }

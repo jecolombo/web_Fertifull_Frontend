@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-
+import { RouterLinkActive } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,16 +8,18 @@ import { Component, HostListener, OnInit } from '@angular/core';
 
 
 export class NavbarComponent implements OnInit {
-
+  
   ngOnInit(): void {
     window.addEventListener('scroll', this.scroll, true)
+    document.body.style.setProperty('--navbar-scroll-text', "white");
   }
-
+   
   scroll = (): void => {
 
    let scrollHeigth;
-
-   if(window.innerWidth < 350){
+  
+   
+   if(window.innerWidth < 250){
     scrollHeigth = 150;
    }else if(window.innerWidth < 500 && window.innerWidth > 350){
     scrollHeigth = 250;
@@ -30,14 +32,21 @@ export class NavbarComponent implements OnInit {
    }
 
     if(window.scrollY >= scrollHeigth){
-      document.body.style.setProperty('--navbar-scroll', "#62C66E");
+      document.body.style.setProperty('--navbar-scroll', "white"); 
       document.body.style.setProperty('--navbar-scroll-text', "black");
+      document.body.style.setProperty('--navbar-scroll-text-shadow', "none");
       document.body.style.setProperty('--navbar-scroll-shadow', "0px 6px 12px -5px #000000");
+      document.body.style.setProperty('--navbar-scroll-img',"url(/assets/img/background_flower1.png)");
+      
     }else if(window.scrollY < scrollHeigth){
       document.body.style.setProperty('--navbar-scroll', "transparent");
-      document.body.style.setProperty('--navbar-scroll-text', "#62C66E");
+      document.body.style.setProperty('--navbar-scroll-text', "white");
+      document.body.style.setProperty('--navbar-scroll-text-shadow', "0px 6px 12px -5px #000000");
       document.body.style.setProperty('--navbar-scroll-shadow', "none");
+      document.body.style.setProperty('--navbar-scroll-img',"none");
+      
     }
   }
-
+  
+  
 }

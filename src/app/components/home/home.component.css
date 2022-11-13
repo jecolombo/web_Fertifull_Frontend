@@ -4,10 +4,20 @@
     background-color: white;
     border-radius: 1rem;
 }
+
+#work{
+    background-image: url("/assets/img/banner_3.png");
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
 .btn{
     width: auto;
 }
+
 .card>img{
     border-radius: 1rem;
-
+    
 }
+

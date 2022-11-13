@@ -1,9 +1,59 @@
-i{
-    font-size: 25px;
-    color: black;
+.navbar ul li a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--navbar-scroll-text);
+    text-shadow: var(--navbar-scroll-text-shadow);
+    position: relative;
 }
-i:hover{
-    color: white;
+@media (min-width:990px){
+
+    .navbar ul li a::before,.navbar ul li a::after{
+        content: '';
+        border-bottom: 2px solid #62C66E;
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        width: 2%;
+        transition: 0.5s ;
+    }
+    .navbar ul li a::before{
+        bottom: 0;
+        right: 49%;
+    }
+    .navbar ul li a::after{
+        bottom: 0;
+        left: 51%;
+    }
+    
+    .navbar ul li a.activo::before,
+    .navbar ul li a:hover::before{
+        width: 45%;
+        bottom: 0;
+        right: 49%;
+        opacity: 1;
+    }
+    .navbar ul li a.activo::after,
+    .navbar ul li a:hover::after{
+        width: 45%;
+        opacity: 1;
+        bottom: 0;
+        left: 51%;
+    }
+    
+}
+.fa-brands {
+    color:var(--navbar-scroll-text);
+    font-size: 1.7rem;
+    
+    transition: 0.5s all;
+}
+.fa-facebook-f{
+    font-size: 1.5rem;
+}
+
+.fa-brands:hover{
+    transform: scale(1.1);
+    color: #62C66E;
 }
 
 body{
@@ -11,17 +61,38 @@ body{
     --navbar-scroll-text: white;
     --navbar-scroll-shadow: none;
    }
+
 .navbar {
-    background-color: var(--navbar-scroll);
+    background-color: var(--navbar-scroll) ;
+    background-image: var(--navbar-scroll-img);
+    background-size: 20rem; 
+    background-repeat: repeat-x;
+    background-position-y: -10px;
     transition: background-color 1s ease;
-    color: var(--navbar-scroll-text);
     -webkit-box-shadow: var(--navbar-scroll-shadow);
     box-shadow: var(--navbar-scroll-shadow);
+   
 }
-.navbar-brand{
+h1{
+    font-size: 1.8rem;
     color: #62C66E;
     font-family: cooper-black-std,serif;
     font-weight: 400;
     font-style: normal;
     text-shadow: 0.1rem 0.1rem  #DD2316;
+}
+
+.btn{
+    background-color: var(--navbar-scroll);
+    color: var(--navbar-scroll-text);
+    height: 30px;
+    padding: 0 5px;
+    border: 2px solid var(--navbar-scroll-text);
+    font-weight: 600;
+}
+
+.btn:hover{
+    color: #62C66E;
+    border-color: #62C66E;
+    background-color: transparent;
 }
